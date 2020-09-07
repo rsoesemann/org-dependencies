@@ -1,5 +1,8 @@
 <apex:page>
+    Download <apex:outputLink value="{!URLFOR($Page.gexfData)}">Gephi Data file</apex:outputLink> here.
+
     <apex:iframe src="https://poloclub.github.io/argo-graph-lite" id="theFrame" />
+
     <script>document.getElementById("theFrame"").height = window.innerHeight - 220;</script>
     <script>
         (function() { //this wrapper prevents pollution of the global scope

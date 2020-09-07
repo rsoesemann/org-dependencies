@@ -7,7 +7,7 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Org Dependencies</label>
     <pageAccesses>
-        <apexPage>explorer</apexPage>
+        <apexPage>dependencyExplorer</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <tabSettings>

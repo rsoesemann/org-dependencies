@@ -12,7 +12,6 @@ public with sharing class DependencyExplorerCtrl {
 			new GexfAttribute('type', 'String'),
 			new GexfAttribute('sfdcId', 'String'),
 			new GexfAttribute('name', 'String')
-
 		};
 		nodes = new Map<String, GexfNode>();
 		edges = new List<GexfEdge>();
@@ -31,7 +30,7 @@ public with sharing class DependencyExplorerCtrl {
 
 	private List<MetadataComponentDependency> queryOrgDependencies() {
 		String query = 'SELECT MetadataComponentId, MetadataComponentName, MetadataComponentType, RefMetadataComponentId, RefMetadataComponentName, RefMetadataComponentType FROM MetadataComponentDependency';
-		return (List<MetadataComponentDependency>) queryToolingApi(query).records;
+		return queryToolingApi(query).records;
 	}
 
 
@@ -57,7 +56,7 @@ public with sharing class DependencyExplorerCtrl {
 	// INNER
 
 	public class ToolingApiResponse {
-		List<Object> records;
+		List<MetadataComponentDependency> records;
 	}
 
 
