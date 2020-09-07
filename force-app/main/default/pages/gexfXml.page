@@ -1,0 +1,31 @@
+<apex:page controller="DependencyDataCtrl" readOnly="true" contentType="text/xml" showHeader="false" sidebar="false" cache="false">
+
+    <gexf xmlns="http://www.gexf.net/1.2draft" version="1.2">
+        <graph defaultedgetype="directed">
+
+            <attributes class="node">
+                <apex:repeat value="{!attributes}" var="attribute">
+                    <attribute id="{!attribute.id}" title="{!attribute.title}" type="{!attribute.type}"/>
+                </apex:repeat>
+            </attributes>
+
+            <nodes>
+                <apex:repeat value="{!nodes}" var="node">
+                    <node id="{!node.id}" label="{!node.label}">
+                        <attvalues>
+                            <apex:repeat value="{!node.attributes}" var="name">
+                                <attvalue for="{!name}" value="{!node.attributes[name]}"/>
+                            </apex:repeat>
+                        </attvalues>
+                    </node>
+                </apex:repeat>
+            </nodes>
+
+            <edges>
+                <apex:repeat value="{!edges}" var="edge">
+                    <edge id="{!edge.id}" source="{!edge.source}" target="{!edge.target}" />
+                </apex:repeat>
+            </edges>
+        </graph>
+    </gexf>
+</apex:page>

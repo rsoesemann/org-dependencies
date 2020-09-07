@@ -1,0 +1,14 @@
+{
+  "orgName": "org-dependencies_DEV",
+  "country": "US",
+  "edition": "Developer",
+  "language": "en_US",
+  "settings": {
+    "lightningExperienceSettings": {
+      "enableS1DesktopEnabled": true
+    },
+    "chatterSettings": {
+      "enableChatter": true
+    }
+  }
+}
