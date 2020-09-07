@@ -1,4 +1,5 @@
-<apex:page controller="DependencyDataCtrl" readOnly="true" contentType="text/xml" showHeader="false" sidebar="false" cache="false">
+<apex:page controller="DependencyDataCtrl" readOnly="true" showHeader="false" sidebar="false" cache="false"
+           title="org-dependencies.gexf" contentType="application/xml#org-dependencies.gexf">
 
     <gexf xmlns="http://www.gexf.net/1.2draft" version="1.2">
         <graph defaultedgetype="directed">
@@ -10,11 +11,11 @@
             </attributes>
 
             <nodes>
-                <apex:repeat value="{!nodes}" var="node">
-                    <node id="{!node.id}" label="{!node.label}">
+                <apex:repeat value="{!nodes}" var="nodeId">
+                    <node id="{!nodeId}" label="{!nodes[nodeId].label}">
                         <attvalues>
-                            <apex:repeat value="{!node.attributes}" var="name">
-                                <attvalue for="{!name}" value="{!node.attributes[name]}"/>
+                            <apex:repeat value="{!nodes[nodeId].attributes}" var="attribute">
+                                <attvalue for="{!attribute}" value="{!nodes[nodeId].attributes[attribute]}"/>
                             </apex:repeat>
                         </attvalues>
                     </node>

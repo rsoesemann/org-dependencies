@@ -1,11 +1,13 @@
 <apex:page>
-    <apex:iframe src="https://poloclub.github.io/argo-graph-lite" id="theFrame" width="200" height="200" />
+    <apex:iframe src="https://poloclub.github.io/argo-graph-lite" id="theFrame" />
+    <script>document.getElementById("theFrame"").height = window.innerHeight - 220;</script>
     <script>
         (function() { //this wrapper prevents pollution of the global scope
             var windowOnresize = window.onresize;
+
             window.onresize = function() {
-                if (windowOnresize) windowOnresize(); //don't trample the handler; intercept it
-                document.getElementById('theFrame').height = window.innerHeight - 220;
+                if (windowOnresize) windowOnresize();
+                document.getElementById("theFrame").height = window.innerHeight - 220;
             };
         }());
     </script>
