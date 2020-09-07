@@ -1,4 +1,4 @@
-<apex:page controller="DependencyDataCtrl" readOnly="true" showHeader="false" sidebar="false" cache="false"
+<apex:page controller="DependencyExplorerCtrl" readOnly="true" showHeader="false" sidebar="false" cache="false"
            title="org-dependencies.gexf" contentType="application/xml#org-dependencies.gexf">
 
     <gexf xmlns="http://www.gexf.net/1.2draft" version="1.2">
