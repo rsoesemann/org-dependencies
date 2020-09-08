@@ -2,32 +2,214 @@
   "rawGraph":{
     "nodes":[
       {
-        "id":"Robert",
-        "node_id":"Robert"
+        "id":"ApexClass::DependencyExplorerCtrl",
+        "degree":2,
+        "pagerank":0.13612018589032407,
+        "node_id":"ApexClass::DependencyExplorerCtrl",
+        "name":"DependencyExplorerCtrl",
+        "sfdcId":"01p2D000004R10FQAS",
+        "type":"ApexClass",
+        "label":"ApexClass::DependencyExplorerCtrl",
+        "isHidden":false
       },
       {
-        "id":"Anmol",
-        "node_id":"Anmol"
+        "id":"ApexClass::Gexf",
+        "degree":1,
+        "pagerank":0.07499546261039351,
+        "node_id":"ApexClass::Gexf",
+        "name":"Gexf",
+        "sfdcId":"01p2D000004R4G4QAK",
+        "type":"ApexClass",
+        "label":"ApexClass::Gexf",
+        "isHidden":false
+      },
+      {
+        "id":"ApexClass::ObjectFieldPickList",
+        "degree":1,
+        "pagerank":0.1111111111111111,
+        "node_id":"ApexClass::ObjectFieldPickList",
+        "name":"ObjectFieldPickList",
+        "sfdcId":"01p2D000004R325QAC",
+        "type":"ApexClass",
+        "label":"ApexClass::ObjectFieldPickList",
+        "isHidden":false
+      },
+      {
+        "id":"ApexClass::ObjectFieldPickListTest",
+        "degree":1,
+        "pagerank":0.1111111111111111,
+        "node_id":"ApexClass::ObjectFieldPickListTest",
+        "name":"ObjectFieldPickListTest",
+        "sfdcId":"01p2D000004R326QAC",
+        "type":"ApexClass",
+        "label":"ApexClass::ObjectFieldPickListTest",
+        "isHidden":false
+      },
+      {
+        "id":"ApexPage::dependencyExplorer",
+        "degree":2,
+        "pagerank":0.13612018589032407,
+        "node_id":"ApexPage::dependencyExplorer",
+        "name":"dependencyExplorer",
+        "sfdcId":"0662D000001WerZQAS",
+        "type":"ApexPage",
+        "label":"ApexPage::dependencyExplorer",
+        "isHidden":false
+      },
+      {
+        "id":"ApexPage::gexfData",
+        "degree":2,
+        "pagerank":0.13332425855412036,
+        "node_id":"ApexPage::gexfData",
+        "name":"gexfData",
+        "sfdcId":"0662D000001WeraQAC",
+        "type":"ApexPage",
+        "label":"ApexPage::gexfData",
+        "isHidden":false
+      },
+      {
+        "id":"CustomTab::OrgDependencies",
+        "degree":1,
+        "pagerank":0.07499546261039351,
+        "node_id":"CustomTab::OrgDependencies",
+        "name":"OrgDependencies",
+        "sfdcId":"01r2D0000006C3BQAU",
+        "type":"CustomTab",
+        "label":"CustomTab::OrgDependencies",
+        "isHidden":false
+      },
+      {
+        "id":"Layout::Campaign Layout",
+        "degree":1,
+        "pagerank":0.1111111111111111,
+        "node_id":"Layout::Campaign Layout",
+        "name":"Campaign Layout",
+        "sfdcId":"00h2D000001NQ5aQAG",
+        "type":"Layout",
+        "label":"Layout::Campaign Layout",
+        "isHidden":false
+      },
+      {
+        "id":"WebLink::View Campaign Influence Report",
+        "degree":1,
+        "pagerank":0.1111111111111111,
+        "node_id":"WebLink::View Campaign Influence Report",
+        "name":"View Campaign Influence Report",
+        "sfdcId":"00b2D000001JVJeQAO",
+        "type":"WebLink",
+        "label":"WebLink::View Campaign Influence Report",
+        "isHidden":false
       }
     ],
     "edges":[
       {
-        "source_id":"Napoleon",
-        "target_id":"Myriel"
+        "source_id":"CustomTab::OrgDependencies",
+        "target_id":"ApexPage::dependencyExplorer"
       },
       {
-        "source_id":"Myriel",
-        "target_id":"Napoleon"
+        "source_id":"ApexPage::dependencyExplorer",
+        "target_id":"CustomTab::OrgDependencies"
+      },
+      {
+        "source_id":"Layout::Campaign Layout",
+        "target_id":"WebLink::View Campaign Influence Report"
+      },
+      {
+        "source_id":"WebLink::View Campaign Influence Report",
+        "target_id":"Layout::Campaign Layout"
+      },
+      {
+        "source_id":"ApexClass::DependencyExplorerCtrl",
+        "target_id":"ApexClass::Gexf"
+      },
+      {
+        "source_id":"ApexClass::Gexf",
+        "target_id":"ApexClass::DependencyExplorerCtrl"
+      },
+      {
+        "source_id":"ApexClass::ObjectFieldPickListTest",
+        "target_id":"ApexClass::ObjectFieldPickList"
+      },
+      {
+        "source_id":"ApexClass::ObjectFieldPickList",
+        "target_id":"ApexClass::ObjectFieldPickListTest"
+      },
+      {
+        "source_id":"ApexPage::dependencyExplorer",
+        "target_id":"ApexPage::gexfData"
+      },
+      {
+        "source_id":"ApexPage::gexfData",
+        "target_id":"ApexPage::dependencyExplorer"
+      },
+      {
+        "source_id":"ApexPage::gexfData",
+        "target_id":"ApexClass::DependencyExplorerCtrl"
+      },
+      {
+        "source_id":"ApexClass::DependencyExplorerCtrl",
+        "target_id":"ApexPage::gexfData"
       }
     ]
   },
+  "overrides":{
+
+  },
+  "positions":{
+    "ApexClass::DependencyExplorerCtrl":[
+      -7.61238476092456,
+      10.702127231621796
+    ],
+    "ApexClass::Gexf":[
+      -19.78277235763745,
+      38.19931505413903
+    ],
+    "ApexClass::ObjectFieldPickList":[
+      55.43504600948906,
+      22.856617602576527
+    ],
+    "ApexClass::ObjectFieldPickListTest":[
+      47.71017565065595,
+      51.88850485653992
+    ],
+    "ApexPage::dependencyExplorer":[
+      -44.55388368996833,
+      -30.848601675089295
+    ],
+    "ApexPage::gexfData":[
+      -17.363363612034284,
+      -17.835382676032026
+    ],
+    "CustomTab::OrgDependencies":[
+      -60.91726653146664,
+      -5.631725958677402
+    ],
+    "Layout::Campaign Layout":[
+      25.64405435471211,
+      -65.11394256412973
+    ],
+    "WebLink::View Campaign Influence Report":[
+      49.054568980921886,
+      -46.286240509380875
+    ]
+  },
   "metadata":{
-    "snapshotName":"Les Miserables",
-    "fullNodes":2,
-    "fullEdges":1,
+    "snapshotName":"Untitled Graph",
+    "fullNodes":9,
+    "fullEdges":6,
     "nodeProperties":[
       "id",
-      "node_id"
+      "degree",
+      "pagerank",
+      "node_id",
+      "name",
+      "sfdcId",
+      "type",
+      "label"
+    ],
+    "nodeComputed":[
+      "pagerank",
+      "degree"
     ],
     "edgeProperties":[
       "source_id",
@@ -36,13 +218,13 @@
   },
   "global":{
     "nodes":{
-      "colorBy":"id",
+      "colorBy":"pagerank",
       "color":{
         "scale":"Linear Scale",
         "from":"#448AFF",
         "to":"#E91E63"
       },
-      "sizeBy":"id",
+      "sizeBy":"pagerank",
       "size":{
         "min":2,
         "max":10,
@@ -50,7 +232,7 @@
       },
       "labelBy":"node_id",
       "shape":"circle",
-      "labelSize":1.2999999999999998,
+      "labelSize":1,
       "labelLength":10
     }
   }

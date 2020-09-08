@@ -1,17 +1,4 @@
 <apex:page>
-    Download <apex:outputLink value="{!URLFOR($Page.gexfData)}">Gephi Data file</apex:outputLink> here.
-
     <apex:iframe src="https://poloclub.github.io/argo-graph-lite#https://raw.githubusercontent.com/rsoesemann/org-dependencies/master/force-app/main/default/staticresources/lesmiserables_json.json" id="theFrame" />
-
-    <script>document.getElementById("theFrame").height = window.innerHeight - 220;</script>
-    <script>
-        (function() { //this wrapper prevents pollution of the global scope
-            var windowOnresize = window.onresize;
-
-            window.onresize = function() {
-                if (windowOnresize) windowOnresize();
-                document.getElementById("theFrame").height = window.innerHeight - 220;
-            };
-        }());
-    </script>
+    Download <apex:outputLink value="{!URLFOR($Page.gexfData)}">Gephi Data file</apex:outputLink> here.
 </apex:page>
