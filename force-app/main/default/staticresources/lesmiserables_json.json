@@ -1,0 +1,74 @@
+{
+  "rawGraph":{
+    "nodes":[
+      {
+        "id":"Napoleon",
+        "degree":1,
+        "pagerank":0.005542802377608484,
+        "node_id":"Napoleon"
+      },
+      {
+        "id":"Myriel",
+        "degree":10,
+        "pagerank":0.044092727407710815,
+        "node_id":"Myriel"
+      }
+    ],
+    "edges":[
+      {
+        "source_id":"Napoleon",
+        "target_id":"Myriel"
+      },
+      {
+        "source_id":"Myriel",
+        "target_id":"Napoleon"
+      }
+    ]
+  },
+  "overrides":{
+
+  },
+  "nodesShowingLabels":[
+    "Napoleon",
+    "Myriel"
+  ],
+  "metadata":{
+    "snapshotName":"Les Miserables",
+    "fullNodes":2,
+    "fullEdges":1,
+    "nodeProperties":[
+      "id",
+      "degree",
+      "pagerank",
+      "node_id"
+    ],
+    "nodeComputed":[
+      "pagerank",
+      "degree"
+    ],
+    "edgeProperties":[
+      "source_id",
+      "target_id"
+    ]
+  },
+  "global":{
+    "nodes":{
+      "colorBy":"pagerank",
+      "color":{
+        "scale":"Linear Scale",
+        "from":"#448AFF",
+        "to":"#E91E63"
+      },
+      "sizeBy":"pagerank",
+      "size":{
+        "min":2,
+        "max":10,
+        "scale":"Linear Scale"
+      },
+      "labelBy":"node_id",
+      "shape":"circle",
+      "labelSize":1.2999999999999998,
+      "labelLength":10
+    }
+  }
+}

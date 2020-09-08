@@ -1,20 +1,20 @@
 public with sharing class DependencyExplorerCtrl {
 
-	public List<GexfAttribute> attributes { get; private set; }
-	public Map<String, GexfNode> nodes { get; private set; }
-	public List<GexfEdge> edges { get; private set; }
+	public List<Gexf.Attribute> attributes { get; private set; }
+	public Map<String, Gexf.Node> nodes { get; private set; }
+	public List<Gexf.Edge> edges { get; private set; }
 
 
 	// CONSTRUCTOR
 
 	public DependencyExplorerCtrl() {
-		attributes = new List<GexfAttribute>{
-			new GexfAttribute('type', 'String'),
-			new GexfAttribute('sfdcId', 'String'),
-			new GexfAttribute('name', 'String')
+		attributes = new List<Gexf.Attribute>{
+			new Gexf.Attribute('type', 'String'),
+			new Gexf.Attribute('sfdcId', 'String'),
+			new Gexf.Attribute('name', 'String')
 		};
-		nodes = new Map<String, GexfNode>();
-		edges = new List<GexfEdge>();
+		nodes = new Map<String, Gexf.Node>();
+		edges = new List<Gexf.Edge>();
 
 
 		for(MetadataComponentDependency dependency : queryOrgDependencies()) {
@@ -46,7 +46,7 @@ public with sharing class DependencyExplorerCtrl {
 	}
 
 
-	private void register(GexfNode node) {
+	private void register(Gexf.Node node) {
 		if( !nodes.containsKey(node.label)) {
 			nodes.put(node.id, node);
 		}
@@ -68,64 +68,24 @@ public with sharing class DependencyExplorerCtrl {
 		public String RefMetadataComponentName;
 		public String RefMetadataComponentType;
 
-		public GexfNode gexfSource() {
-			return new GexfNode(MetadataComponentType + '::' + MetadataComponentName)
+		public Gexf.Node gexfSource() {
+			return new Gexf.Node(MetadataComponentType + '::' + MetadataComponentName)
 					.attribute('type', MetadataComponentType)
 					.attribute('name', MetadataComponentName)
 					.attribute('sfdcId', MetadataComponentId);
 		}
 
-		public GexfNode gexfTarget() {
-			return new GexfNode(RefMetadataComponentType + '::' + RefMetadataComponentName)
+		public Gexf.Node gexfTarget() {
+			return new Gexf.Node(RefMetadataComponentType + '::' + RefMetadataComponentName)
 					.attribute('type', RefMetadataComponentType)
 					.attribute('name', RefMetadataComponentName)
 					.attribute('sfdcId', RefMetadataComponentId);
 		}
 
-		public GexfEdge gexfEdge() {
-			return new GexfEdge(gexfSource().id, gexfTarget().id);
-		}
-	}
-
-	public class GexfEdge {
-		public String id { get; private set; }
-		public String source { get; private set; }
-		public String target { get; private set; }
-
-		public GexfEdge(String source, String target) {
-			this.source = source;
-			this.target = target;
+		public Gexf.Edge gexfEdge() {
+			return new Gexf.Edge(gexfSource().id, gexfTarget().id);
 		}
 	}
 
 
-	public class GexfNode {
-		public String id {get; private set;}
-		public String label { get; private set; }
-		public Map<String, String> attributes { get; private set; }
-
-		public GexfNode(String id) {
-			attributes = new Map<String, String>();
-			this.id = id;
-			this.label = id;
-		}
-
-		public GexfNode attribute(String key, String value) {
-			attributes.put(key, value);
-			return this;
-		}
-	}
-
-
-	public class GexfAttribute {
-		public String id { get; private set; }
-		public String title { get; private set; }
-		public String type { get; private set; }
-
-		public GexfAttribute(String id, String type) {
-			this.id = id;
-			title = id;
-			this.type = type;
-		}
-	}
 }
