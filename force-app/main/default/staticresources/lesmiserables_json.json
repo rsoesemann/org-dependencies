@@ -3,9 +3,6 @@
     "nodes":[
       {
         "id":"ApexClass::DependencyExplorerCtrl",
-        "degree":2,
-        "pagerank":0.13612018589032407,
-        "node_id":"ApexClass::DependencyExplorerCtrl",
         "name":"DependencyExplorerCtrl",
         "sfdcId":"01p2D000004R10FQAS",
         "type":"ApexClass",
@@ -14,9 +11,6 @@
       },
       {
         "id":"ApexClass::Gexf",
-        "degree":1,
-        "pagerank":0.07499546261039351,
-        "node_id":"ApexClass::Gexf",
         "name":"Gexf",
         "sfdcId":"01p2D000004R4G4QAK",
         "type":"ApexClass",
@@ -25,9 +19,6 @@
       },
       {
         "id":"ApexClass::ObjectFieldPickList",
-        "degree":1,
-        "pagerank":0.1111111111111111,
-        "node_id":"ApexClass::ObjectFieldPickList",
         "name":"ObjectFieldPickList",
         "sfdcId":"01p2D000004R325QAC",
         "type":"ApexClass",
@@ -36,9 +27,6 @@
       },
       {
         "id":"ApexClass::ObjectFieldPickListTest",
-        "degree":1,
-        "pagerank":0.1111111111111111,
-        "node_id":"ApexClass::ObjectFieldPickListTest",
         "name":"ObjectFieldPickListTest",
         "sfdcId":"01p2D000004R326QAC",
         "type":"ApexClass",
@@ -47,9 +35,6 @@
       },
       {
         "id":"ApexPage::dependencyExplorer",
-        "degree":2,
-        "pagerank":0.13612018589032407,
-        "node_id":"ApexPage::dependencyExplorer",
         "name":"dependencyExplorer",
         "sfdcId":"0662D000001WerZQAS",
         "type":"ApexPage",
@@ -58,9 +43,6 @@
       },
       {
         "id":"ApexPage::gexfData",
-        "degree":2,
-        "pagerank":0.13332425855412036,
-        "node_id":"ApexPage::gexfData",
         "name":"gexfData",
         "sfdcId":"0662D000001WeraQAC",
         "type":"ApexPage",
@@ -69,9 +51,6 @@
       },
       {
         "id":"CustomTab::OrgDependencies",
-        "degree":1,
-        "pagerank":0.07499546261039351,
-        "node_id":"CustomTab::OrgDependencies",
         "name":"OrgDependencies",
         "sfdcId":"01r2D0000006C3BQAU",
         "type":"CustomTab",
@@ -80,9 +59,6 @@
       },
       {
         "id":"Layout::Campaign Layout",
-        "degree":1,
-        "pagerank":0.1111111111111111,
-        "node_id":"Layout::Campaign Layout",
         "name":"Campaign Layout",
         "sfdcId":"00h2D000001NQ5aQAG",
         "type":"Layout",
@@ -91,9 +67,6 @@
       },
       {
         "id":"WebLink::View Campaign Influence Report",
-        "degree":1,
-        "pagerank":0.1111111111111111,
-        "node_id":"WebLink::View Campaign Influence Report",
         "name":"View Campaign Influence Report",
         "sfdcId":"00b2D000001JVJeQAO",
         "type":"WebLink",
@@ -161,9 +134,6 @@
     "fullEdges":6,
     "nodeProperties":[
       "id",
-      "degree",
-      "pagerank",
-      "node_id",
       "name",
       "sfdcId",
       "type",
