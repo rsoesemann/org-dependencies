@@ -1,4 +1,4 @@
 <apex:page>
-    <apex:iframe src="https://poloclub.github.io/argo-graph-lite#https://github.com/rsoesemann/org-dependencies/blob/master/force-app/main/default/staticresources/lesmiserables_json.json" id="theFrame" />
+    <apex:iframe src="https://poloclub.github.io/argo-graph-lite#https://raw.githubusercontent.com/rsoesemann/org-dependencies/master/force-app/main/default/staticresources/lesmiserables_json.json" id="theFrame" />
     Download <apex:outputLink value="{!URLFOR($Page.gexfData)}">Gephi Data file</apex:outputLink> here.
 </apex:page>
