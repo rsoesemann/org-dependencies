@@ -155,6 +155,12 @@
   "overrides":{
 
   },
+  "nodesShowingLabels":[
+    "Valjean",
+    "Fantine",
+    "Thenardier",
+    "Gavroche"
+  ],
   "positions":{
     "ApexClass::DependencyExplorerCtrl":[
       -7.61238476092456,
