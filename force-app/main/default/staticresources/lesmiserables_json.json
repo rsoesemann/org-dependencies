@@ -154,44 +154,7 @@
   },
   "overrides":{},
   "nodesShowingLabels":[],
-  "positions":{
-    "ApexClass::DependencyExplorerCtrl":[
-      -7.61238476092456,
-      10.702127231621796
-    ],
-    "ApexClass::Gexf":[
-      -19.78277235763745,
-      38.19931505413903
-    ],
-    "ApexClass::ObjectFieldPickList":[
-      55.43504600948906,
-      22.856617602576527
-    ],
-    "ApexClass::ObjectFieldPickListTest":[
-      47.71017565065595,
-      51.88850485653992
-    ],
-    "ApexPage::dependencyExplorer":[
-      -44.55388368996833,
-      -30.848601675089295
-    ],
-    "ApexPage::gexfData":[
-      -17.363363612034284,
-      -17.835382676032026
-    ],
-    "CustomTab::OrgDependencies":[
-      -60.91726653146664,
-      -5.631725958677402
-    ],
-    "Layout::Campaign Layout":[
-      25.64405435471211,
-      -65.11394256412973
-    ],
-    "WebLink::View Campaign Influence Report":[
-      49.054568980921886,
-      -46.286240509380875
-    ]
-  },
+  "positions":{},
   "metadata":{
     "snapshotName":"Untitled Graph",
     "fullNodes":9,
