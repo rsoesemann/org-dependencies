@@ -192,8 +192,8 @@
         "max":10,
         "scale":"Linear Scale"
       },
-      "labelBy":"node_id",
-      "shape":"circle",
+      "labelBy":"label",
+      "shape":"triangle",
       "labelSize":1,
       "labelLength":10
     }
