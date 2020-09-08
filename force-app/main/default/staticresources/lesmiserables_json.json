@@ -152,15 +152,8 @@
       }
     ]
   },
-  "overrides":{
-
-  },
-  "nodesShowingLabels":[
-    "Valjean",
-    "Fantine",
-    "Thenardier",
-    "Gavroche"
-  ],
+  "overrides":{},
+  "nodesShowingLabels":[],
   "positions":{
     "ApexClass::DependencyExplorerCtrl":[
       -7.61238476092456,
