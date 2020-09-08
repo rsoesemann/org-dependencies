@@ -25,13 +25,6 @@
       }
     ]
   },
-  "overrides":{
-
-  },
-  "nodesShowingLabels":[
-    "Napoleon",
-    "Myriel"
-  ],
   "metadata":{
     "snapshotName":"Les Miserables",
     "fullNodes":2,
@@ -41,10 +34,6 @@
       "degree",
       "pagerank",
       "node_id"
-    ],
-    "nodeComputed":[
-      "pagerank",
-      "degree"
     ],
     "edgeProperties":[
       "source_id",

@@ -1,7 +1,7 @@
 <apex:page>
     Download <apex:outputLink value="{!URLFOR($Page.gexfData)}">Gephi Data file</apex:outputLink> here.
 
-    <apex:iframe src="https://poloclub.github.io/argo-graph-lite#https://gist.githubusercontent.com/rsoesemann/eca90ce3a3700e5b5a1be848620acfa1/raw/835ae4a783c5a51a11ef00b56d7e90a8d2c84303/lesmiserables.json" id="theFrame" />
+    <apex:iframe src="https://poloclub.github.io/argo-graph-lite#https://raw.githubusercontent.com/rsoesemann/org-dependencies/master/force-app/main/default/staticresources/lesmiserables_json.json" id="theFrame" />
 
     <script>document.getElementById("theFrame").height = window.innerHeight - 220;</script>
     <script>
