@@ -2,16 +2,12 @@
   "rawGraph":{
     "nodes":[
       {
-        "id":"Napoleon",
-        "degree":1,
-        "pagerank":0.005542802377608484,
-        "node_id":"Napoleon"
+        "id":"Robert",
+        "node_id":"Robert"
       },
       {
-        "id":"Myriel",
-        "degree":10,
-        "pagerank":0.044092727407710815,
-        "node_id":"Myriel"
+        "id":"Anmol",
+        "node_id":"Anmol"
       }
     ],
     "edges":[
@@ -31,8 +27,6 @@
     "fullEdges":1,
     "nodeProperties":[
       "id",
-      "degree",
-      "pagerank",
       "node_id"
     ],
     "edgeProperties":[
@@ -42,13 +36,13 @@
   },
   "global":{
     "nodes":{
-      "colorBy":"pagerank",
+      "colorBy":"id",
       "color":{
         "scale":"Linear Scale",
         "from":"#448AFF",
         "to":"#E91E63"
       },
-      "sizeBy":"pagerank",
+      "sizeBy":"id",
       "size":{
         "min":2,
         "max":10,
