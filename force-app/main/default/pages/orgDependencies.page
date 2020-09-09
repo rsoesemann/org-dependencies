@@ -1,5 +1,5 @@
 <apex:page>
     <apex:iframe src="https://poloclub.github.io/argo-graph-lite" id="theFrame" />
 
-    Download <apex:outputLink value="{!URLFOR($Page.gexfData)}">Gephi Data file</apex:outputLink> here.
+    Download <apex:outputLink value="{!URLFOR($Page.gexf)}">Gephi GEXF file</apex:outputLink> here.
 </apex:page>
