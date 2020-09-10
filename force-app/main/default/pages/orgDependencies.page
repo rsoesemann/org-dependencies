@@ -1,14 +1,18 @@
-<apex:page >
-    <!-- <apex:canvasApp developerName="mycanvas" parameters="{!generateJSON}" /> -->
-
-    <apex:iframe id="backend" src="http://127.0.0.1:5500/index.html"/>
+<apex:page controller="OrgDependenciesCtrl">
+    <apex:iframe id="backend" src="https://www.yworks.com/yed-live/"/>
 
     <script>
         debugger;
         const iframeEl = document.getElementById("backend");
-        const message = JSON.stringify({
-            data: "Anmol"
-        });
-        iframeEl.contentWindow.postMessage(message, "http://127.0.0.1:5500");
+
+        Visualforce.remoting.Manager.invokeAction(
+            '{!$RemoteAction.OrgDependenciesCtrl.graphXml}',
+            function(result, event){
+                if (event.status) {
+                    iframeEl.contentWindow.postMessage(result, "https://www.yworks.com/yed-live/");
+                }
+            },
+            { escape: false }
+        );
     </script>
 </apex:page>
