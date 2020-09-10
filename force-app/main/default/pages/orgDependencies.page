@@ -1,5 +1,3 @@
-<apex:page>
-    <apex:iframe src="https://poloclub.github.io/argo-graph-lite" id="theFrame" />
-
-    Download <apex:outputLink value="{!URLFOR($Page.gexf)}">Gephi GEXF file</apex:outputLink> here.
+<apex:page controller="">
+    <apex:canvasApp developerName="mycanvas" parameters="{!generateJSON}" />
 </apex:page>

@@ -9,12 +9,12 @@ public with sharing class OrgDependenciesCtrl {
         graph = new DirectedGraph();
 
         graph.attributes.put('type', new Attribute('type') );
-        graph.attributes.put('sfdcId', new Attribute('sfdcId') );
-        graph.attributes.put('label', new Attribute('label') );
 
         for(MetadataComponentDependency dependency : queryOrgDependencies()) {
-            graph.nodes.add( new Node(dependency.MetadataComponentId, dependency.MetadataComponentName) );
-            graph.nodes.add( new Node(dependency.RefMetadataComponentId, dependency.RefMetadataComponentName) );
+            graph.nodes.add( new Node(dependency.MetadataComponentId, dependency.MetadataComponentName)
+                                    .attribute('type', dependency.MetadataComponentType) );
+            graph.nodes.add( new Node(dependency.RefMetadataComponentId, dependency.RefMetadataComponentName)
+                                    .attribute('type', dependency.MetadataComponentType) );
 
             graph.edges.add( new Edge(dependency.MetadataComponentId, dependency.RefMetadataComponentId) );
         }

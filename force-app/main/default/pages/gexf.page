@@ -1,18 +1,16 @@
-<apex:page controller="OrgDependenciesCtrl" title="dependencies.gexf" contentType="application/xml#dependencies.gexf"
-            readOnly="true" showHeader="false" sidebar="false" cache="false">
+<apex:page controller="OrgDependenciesCtrl" title="dependencies.gexf" contentType="application/xml"
+           readOnly="true" showHeader="false" sidebar="false" cache="false">
 
     <gexf xmlns="http://www.gexf.net/1.2draft" version="1.2">
         <graph defaultedgetype="directed">
 
             <attributes class="node">
-                <apex:repeat value="{!graph.attributes}" var="attribute">
-                    <attribute id="{!graph.attributes[attribute].id}" title="{!graph.attributes[attribute].label}" type="{!graph.attributes[attribute].type}"/>
-                </apex:repeat>
+                <attribute id="type" title="Type" type="String"/>
             </attributes>
 
             <nodes>
                 <apex:repeat value="{!graph.nodes}" var="node">
-                    <node id="{!node.id}" label="{!node.label}">
+                    <node id="{!node.id}" label="{!node.label} - {!node.attributes['type']}">
                         <attvalues>
                             <apex:repeat value="{!node.attributes}" var="attribute">
                                 <attvalue for="{!attribute}" value="{!node.attributes[attribute]}"/>
