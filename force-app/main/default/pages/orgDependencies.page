@@ -2,13 +2,11 @@
     <apex:iframe id="backend" src="https://www.yworks.com/yed-live/"/>
 
     <script>
-        debugger;
-        const iframeEl = document.getElementById("backend");
-
         Visualforce.remoting.Manager.invokeAction(
             '{!$RemoteAction.OrgDependenciesCtrl.graphXml}',
             function(result, event){
                 if (event.status) {
+                    const iframeEl = document.getElementById("backend");
                     iframeEl.contentWindow.postMessage(result, "https://www.yworks.com/yed-live/");
                 }
             },

@@ -4,18 +4,10 @@
         <apexClass>OrgDependenciesCtrl</apexClass>
         <enabled>true</enabled>
     </classAccesses>
-    <classAccesses>
-        <apexClass>GraphDataCtrl</apexClass>
-        <enabled>true</enabled>
-    </classAccesses>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Org Dependencies</label>
     <pageAccesses>
         <apexPage>orgDependencies</apexPage>
-        <enabled>true</enabled>
-    </pageAccesses>
-    <pageAccesses>
-        <apexPage>graphData</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
     <tabSettings>
