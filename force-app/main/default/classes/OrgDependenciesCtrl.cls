@@ -1,7 +1,14 @@
 public with sharing class OrgDependenciesCtrl {
 
+    public String rawData {
+        get {
+            return rawData();
+        }
+        private set;
+    }
+
     @RemoteAction
-    public static String graphXml() {
+    public static String rawData() {
         DirectedGraph result = new DirectedGraph()
                                         .add(new Attribute('type'));
 
@@ -15,7 +22,7 @@ public with sharing class OrgDependenciesCtrl {
                 .add( new Edge(dependency.MetadataComponentId, dependency.RefMetadataComponentId) );
         }
 
-        return JSON.serializePretty(result);
+        return JSON.serialize(result);
     }
 
 

@@ -1,9 +1,10 @@
 <apex:page controller="OrgDependenciesCtrl">
+    <!--
     <apex:iframe id="backend" src="https://www.yworks.com/yed-live/"/>
-
+-->
     <script>
         Visualforce.remoting.Manager.invokeAction(
-            '{!$RemoteAction.OrgDependenciesCtrl.graphXml}',
+            '{!$RemoteAction.OrgDependenciesCtrl.rawData}',
             function(result, event){
                 if (event.status) {
                     const iframeEl = document.getElementById("backend");
@@ -13,4 +14,6 @@
             { escape: false }
         );
     </script>
+
+    {!rawData}
 </apex:page>
