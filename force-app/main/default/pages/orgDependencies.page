@@ -1,7 +1,7 @@
 <apex:page controller="OrgDependenciesCtrl">
-    <!--
-    <apex:iframe id="backend" src="https://www.yworks.com/yed-live/"/>
--->
+
+    <apex:iframe id="backend" src="https://www.yworks.com/app-generator/index.html"/>
+
     <script>
         Visualforce.remoting.Manager.invokeAction(
             '{!$RemoteAction.OrgDependenciesCtrl.rawData}',
